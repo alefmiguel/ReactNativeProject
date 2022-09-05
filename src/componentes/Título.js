@@ -3,16 +3,17 @@ import { StyleSheet, Text, View } from "react-native";
 export default function Título(props) {
     return (
         <View style={styles.titleView}>
-            <Text style={styles.titleStyle}>{<strong>{props.estado}</strong>} {props.pais}</Text>
+            <Text style={styles.titleStyle}>{<strong>{props.cidade}</strong>} {props.pais}</Text>
         </View>
     );
 };
 
 const styles = StyleSheet.create({
     titleStyle: {
-        fontSize: 38,
+        fontSize: 78,
     },
     titleView: {
-        left: 40,
+        textAlign: 'center',
+        padding: 80,
     },
 });
