@@ -10,10 +10,11 @@ export default function Título(props) {
 
 const styles = StyleSheet.create({
     titleStyle: {
-        fontSize: 78,
+        fontSize: 40,
+        color: '#ffffff'
     },
     titleView: {
         textAlign: 'center',
-        padding: 80,
+        padding: 20,
     },
 });

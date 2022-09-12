@@ -1,13 +1,36 @@
-import { View } from "react-native";
+import { View, StyleSheet } from "react-native";
 import EspaçoCentral from "../componentes/EspaçoCentral";
+import EspaçoInferior from "../componentes/EspaçoInferior";
 import Título from "../componentes/Título";
 
 export default function Base() {
     return (
-        <View>
+        <View style={{backgroundColor: "#001b2e", flex: 1}}>
             <Título cidade="Maceió," pais="Brazil"></Título>
 
-            <EspaçoCentral atributo='TEMPERATURA' valor='27°C'></EspaçoCentral>
+            <View style={styles.Espaço_Central}>
+                <EspaçoCentral atributo='UMIDADE' valor='70%'></EspaçoCentral>
+                <EspaçoCentral atributo='TEMPERATURA' valor='26°C'></EspaçoCentral>
+            </View>
+
+            <View style={styles.Espaço_Central}>
+                <EspaçoCentral atributo='CHUVA' valor='2%'></EspaçoCentral>
+                <EspaçoCentral atributo='VENTO' valor='14Km/h'></EspaçoCentral>
+            </View>
+
+
+            <EspaçoInferior>
+                
+            </EspaçoInferior>
+ 
+        
         </View>
     );
 };
+
+const styles = StyleSheet.create({
+    Espaço_Central: {
+        justifyContent: "center",
+        flexDirection: "row",
+    }
+})
