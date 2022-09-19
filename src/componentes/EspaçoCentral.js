@@ -4,7 +4,7 @@ export default function EspaçoCentral(props) {
     return (
         <View style={styles.divpai}>
             <View style={styles.DivMenor}>
-                {props.atributo}
+                <Text>{props.atributo}</Text>
                 <Text style={styles.Text}>
                     {<strong> {props.valor} </strong>}
                 </Text>
@@ -26,9 +26,11 @@ const styles = StyleSheet.create ({
         shadowOffset: {width: -2, height: 4},
         shadowOpacity: 0.8,
         shadowRadius: 3,
+        elevation: 7
     },
     Text: {
-        fontSize: 35
+        fontSize: 35,
+        fontStyle: 'bold',
     },
     divpai: {
         flexDirection: 'row',

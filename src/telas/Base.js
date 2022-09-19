@@ -18,12 +18,8 @@ export default function Base() {
                 <EspaçoCentral atributo='VENTO' valor='14Km/h'></EspaçoCentral>
             </View>
 
+            <EspaçoInferior />
 
-            <EspaçoInferior>
-                
-            </EspaçoInferior>
- 
-        
         </View>
     );
 };
