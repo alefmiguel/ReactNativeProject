@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "App-913A",
-    "slug": "App-913A",
+    "name": "Local Weather",
+    "slug": "Local Weather",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",

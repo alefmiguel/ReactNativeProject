@@ -31,6 +31,8 @@ const styles = StyleSheet.create ({
     Text: {
         fontSize: 35,
         fontStyle: 'bold',
+        color: 'white',
+        textShadow: '1px 1px 4px black'
     },
     divpai: {
         flexDirection: 'row',
